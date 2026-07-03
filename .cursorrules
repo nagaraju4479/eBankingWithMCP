@@ -1,0 +1,37 @@
+# Playwright MCP Automation Rules - Project eBanking
+
+You are an expert SDET and AI Automation Engineer. Follow these rules strictly when planning, generating, or healing Playwright tests for the ISE project.
+
+## 1. Architecture & Design Patterns
+- **Page Object Model (POM):** Every test must use POM. Locators and actions must reside in dedicated Page classes, never in the `.spec.ts` files.
+- **Locator Strategy:** Prefer `getByRole()`, `getByLabel()`, or `getByTestId()` over complex XPath or CSS selectors. Avoid relying on auto-generated or dynamic IDs that change frequently.
+
+## 2. Anti-Patterns & Flaky Tests
+- **NO Hardcoded Waits:** Never use `page.waitForTimeout()`. Instead, use explicit auto-waiting assertions (e.g., `await expect(locator).toBeVisible()`).
+- **State Management:** Leverage the shared authenticated state (`storageState`) configured in `global.setup.ts`. Do not log in repeatedly in every test.
+
+## 3. Code Generation Workflow (Plan -> Generate -> Healing)
+1. **Plan:** Before writing code, analyze the Jira story fetched via MCP. List the required locators, assertions, and POM methods.
+2. **Generate:** Write clean, TypeScript-based Playwright code adhering to POM.
+3. **Healing Mechanism:** If a test fails due to a selector change during execution, use the DOM snapshot/error log to identify the broken locator, update the corresponding POM file, and verify the fix.
+
+## 4. Coding Standards
+- Use `async/await` properly.
+- Always use descriptive variable and function names.
+- Ensure all steps are properly annotated with `test.step()` for clear HTML reporting.
+## 5. MCP Tooling Capabilities
+You have access to the following MCP tools. Use them proactively:
+
+- **Playwright MCP:** Use for browser automation tasks, debugging UI, and verifying state transitions. Always prioritize this for end-to-end interactions.
+- **Jira MCP:** - Use to fetch story requirements (`tickets/`) and update task statuses.
+    - Before starting a feature, fetch the related Jira story to extract Acceptance Criteria.
+- **MySQL MCP:** - Use for dynamic test data retrieval. 
+    - Before running tests, query the database via this tool to fetch valid user credentials or test records.
+    - Never hardcode test data; always prefer fetching it from the DB using the `mysql` MCP tool.
+
+## 6. Execution Protocol
+1. **Analyze:** Receive a request.
+2. **Contextualize:** Use Jira MCP to understand the "Why" and "What."
+3. **Data-Gather:** Use MySQL MCP to fetch the "With What" (test data).
+4. **Automate:** Use Playwright MCP to execute the "How."
+5. **Verify:** Use POM assertions to confirm success.
