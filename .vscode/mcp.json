@@ -1,24 +1,10 @@
 {
-  "mcpServers": {
+  "servers": {
     "playwright": {
       "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-playwright"]
+      "args": ["-y", "@playwright/mcp@latest"]
     },
-    "jira": {
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-jira"],
-      "env": {
-        "JIRA_URL": "https://your-domain.atlassian.net",
-        "JIRA_USER": "your-email@example.com",
-        "JIRA_API_TOKEN": "your-api-token"
-      }
-    },
-    "mysql": {
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-mysql"],
-      "env": {
-        "MYSQL_URL": "mysql://user:password@localhost:3306/ise_db"
-      }
-    }
+     
+   
   }
 }
