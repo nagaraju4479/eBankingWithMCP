@@ -4,7 +4,22 @@
       "command": "npx",
       "args": ["-y", "@playwright/mcp@latest"]
     },
-     
-   
+    "atlassian": {
+      "command": "npx",
+      "args": ["-y", "@teolin/mcp-atlassian"],
+      "env": {
+        "JIRA_URL": "${env:JIRA_URL}",
+        "JIRA_USERNAME": "${env:JIRA_USER}",
+        "JIRA_API_TOKEN": "${env:JIRA_API_TOKEN}",
+        "ATLASSIAN_SITE": "${env:JIRA_URL}",
+        "ATLASSIAN_EMAIL": "${env:JIRA_USER}",
+        "ATLASSIAN_API_TOKEN": "${env:JIRA_API_TOKEN}",
+        "NPM_CONFIG_USERCONFIG": "D:\\npmrc",
+        "NPM_CONFIG_CACHE": "D:\\npm-cache",
+        "NPM_CONFIG_TMP": "D:\\npm-tmp",
+        "TEMP": "D:\\npm-tmp",
+        "TMP": "D:\\npm-tmp"
+      }
+    }
   }
 }
