@@ -28,7 +28,6 @@
       }
     },
     "playwright-test": {
-      "type": "stdio",
       "command": "npx",
       "args": [
         "playwright",
