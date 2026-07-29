@@ -1,0 +1,74 @@
+- generic [active] [ref=e1]:
+  - status [ref=e4]:
+    - generic [ref=e5]: Loading...
+  - generic [ref=e6]:
+    - generic [ref=e10]:
+      - list:
+        - listitem [ref=e11]:
+          - link "Home" [ref=e12] [cursor=pointer]:
+            - /url: "#home-section"
+        - listitem [ref=e13]:
+          - link "User/Account Holder" [ref=e14] [cursor=pointer]:
+            - /url: user/
+        - listitem [ref=e15]:
+          - link "Cashier" [ref=e16] [cursor=pointer]:
+            - /url: cashier/
+        - listitem [ref=e17]:
+          - link "Admin" [ref=e18] [cursor=pointer]:
+            - /url: admin/
+    - banner [ref=e20]:
+      - generic [ref=e22]:
+        - heading [level=1] [ref=e24]:
+          - link "e-Banking." [ref=e25] [cursor=pointer]:
+            - /url: index.php
+        - generic [ref=e26]:
+          - link:
+            - /url: "#"
+    - generic [ref=e27]:
+      - generic [ref=e33]:
+        - generic [ref=e35]:
+          - heading "Online Banking System" [level=1] [ref=e36]
+          - paragraph [ref=e37]: e-Banking System
+          - link "Get In Touch" [ref=e39] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=e41]:
+          - heading "Online Banking System" [level=1] [ref=e42]
+          - paragraph [ref=e43]: e-Banking System
+          - link "Get In Touch" [ref=e45] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=e47]:
+          - heading "Online Banking System" [level=1] [ref=e48]
+          - paragraph [ref=e49]: e-Banking System
+          - link "Get In Touch" [ref=e51] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=e53]:
+          - heading "Online Banking System" [level=1] [ref=e54]
+          - paragraph [ref=e55]: e-Banking System
+          - link "Get In Touch" [ref=e57] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=e59]:
+          - heading "Online Banking System" [level=1] [ref=e60]
+          - paragraph [ref=e61]: e-Banking System
+          - link "Get In Touch" [ref=e63] [cursor=pointer]:
+            - /url: "#"
+      - link [ref=e64] [cursor=pointer]:
+        - /url: "#next"
+    - contentinfo [ref=e67]:
+      - generic [ref=e68]:
+        - generic [ref=e71]:
+          - generic [ref=e72]:
+            - heading "About Us" [level=2] [ref=e73]
+            - paragraph [ref=e74]: e-Banking System developed using PHP and MySQL.
+          - generic [ref=e75]:
+            - heading "Quick Links" [level=2] [ref=e76]
+            - list [ref=e77]:
+              - listitem [ref=e78]:
+                - link "User/Accout Holder" [ref=e79] [cursor=pointer]:
+                  - /url: user/
+              - listitem [ref=e80]:
+                - link "Cashier" [ref=e81] [cursor=pointer]:
+                  - /url: cashier
+              - listitem [ref=e82]:
+                - link "Admin" [ref=e83] [cursor=pointer]:
+                  - /url: admin/
+        - paragraph [ref=e87]: e-Banking System

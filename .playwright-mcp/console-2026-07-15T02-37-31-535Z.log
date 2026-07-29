@@ -1,0 +1,11 @@
+[     308ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost/bankms/user/:0
+[    8177ms] TypeError: Cannot read properties of null (reading 'length')
+    at Object.acquireContext (http://localhost/bankms/vendor/chart.js/Chart.min.js:7:86074)
+    at tn.construct (http://localhost/bankms/vendor/chart.js/Chart.min.js:7:102546)
+    at new tn (http://localhost/bankms/vendor/chart.js/Chart.min.js:7:102287)
+    at http://localhost/bankms/js/demo/chart-area-demo.js:32:19
+[    8178ms] TypeError: Cannot read properties of null (reading 'length')
+    at Object.acquireContext (http://localhost/bankms/vendor/chart.js/Chart.min.js:7:86074)
+    at tn.construct (http://localhost/bankms/vendor/chart.js/Chart.min.js:7:102546)
+    at new tn (http://localhost/bankms/vendor/chart.js/Chart.min.js:7:102287)
+    at http://localhost/bankms/js/demo/chart-pie-demo.js:7:18

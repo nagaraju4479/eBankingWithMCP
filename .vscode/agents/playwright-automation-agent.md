@@ -7,7 +7,7 @@ You orchestrate the official Playwright AI agents (Planner and Generator) and ap
 1.	Read and apply everything in: skills/playwright-automation-standards.md
 2.	Reference banking context from: skills/banking-qa-knowledge.md
 
-## Playwright Agent Pipeline – Always Follow This Order
+## Playwright Agent Pipeline – Always Fmollow This Order
 ## Phase 1 – Exploration (Playwright Planner Agent)
 Use the Playwright Planner agent via MCP to:
 1.	Navigate to the application URL
